@@ -1,0 +1,70 @@
+.tabela-simples{
+    border: 3px solid black;
+    background: rosybrown;
+    text-align: center;
+    margin: 0 auto;
+
+}
+.tabela-simples td{
+    border-top: 1px solid black;
+    border-right: 1px solid white;
+    border-left: 1px solid orange;
+    border-bottom: 1px solid purple;
+}
+.tabela-simples tr{
+    background-color: aqua;
+}
+.tabela-contas{
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 400px;
+}
+.tabela-contas caption{
+    font-weight: bold;
+    background: violet;
+    color: blueviolet;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.tabela-contas th,
+.tabela-contas tfoot{
+    background-color: purple;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.tabela-contas td{
+    border: 1px dotted black;
+}
+.positivo{
+    color: green;
+    background: greenyellow;
+}
+.negativo{
+    color: red;
+    background: rgb(233, 157, 113);
+}
+.positivo::before{
+    content: "+ ";
+}
+.negativo::before{
+    content: "- ";
+}
+.bloco{
+    border: 1px solid red;
+    display: inline;/*inline significa em linha e coloca tudo na mesma linha e não dá mudar o tamanho*/
+}
+.linha{
+    border: 1px solid blue;
+    width: 200px;
+    display: block;/* block significa bloco, nele dá para alterar o tamanho do bloco*/
+}
+.lista-imagens{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
